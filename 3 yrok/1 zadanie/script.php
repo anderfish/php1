@@ -1,12 +1,12 @@
 <?php
 function calculator($x, $y, $operacia) {
-	 if ($operacia == "+"){
+	 if ($operacia == '+'){
 		 return $x+$y;
- }   elseif ($operacia == "-") {
+ }   elseif ($operacia == '-') {
 	     return $x-$y;
-	 } elseif ($operacia == "*") {
+	 } elseif ($operacia == '*') {
 	     return $x*$y;
-     } elseif ($operacia == "/") {
+     } elseif ($operacia == '/') {
 	     return $x/$y;
 	 }
  }	
