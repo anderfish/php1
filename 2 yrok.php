@@ -14,29 +14,29 @@
 	<th>xor</th>
    </tr>
    <tr>
-    <td><?php echo $x=0; ?></td>
-    <td><?php echo $y=0; ?></td>
+    <td><?php echo $x=(int)false; ?></td>
+    <td><?php echo $y=(int)false; ?></td>
     <td><?php echo (int)($x&&$y); ?></td>
     <td><?php echo (int)($x||$y); ?></td>
     <td><?php echo (int)($x xor $y); ?></td>
    </tr>
    <tr>
-    <td><?php echo $x=1; ?></td>
-    <td><?php echo $y=0; ?></td>
+    <td><?php echo $x=true; ?></td>
+    <td><?php echo $y=(int)false; ?></td>
 	<td><?php echo (int)($x&&$y); ?></td>
 	<td><?php echo ($x||$y); ?></td>
 	<td><?php echo ($x xor $y); ?></td>
    </tr>
    <tr>
-    <td><?php echo $x=0; ?></td>
-	<td><?php echo $y=1; ?></td>
+    <td><?php echo $x=(int)(false); ?></td>
+	<td><?php echo $y=true; ?></td>
 	<td><?php echo (int)($x&&$y); ?></td>
 	<td><?php echo ($x||$y); ?></td>
 	<td><?php echo ($x xor $y); ?></td>
    </tr>
    <tr>
-   <td><?php echo $x=1; ?></td>
-   <td><?php echo $y=1; ?></td>
+   <td><?php echo $x=true; ?></td>
+   <td><?php echo $y=true; ?></td>
    <td><?php echo ($x&&$y); ?></td>
    <td><?php echo ($x||$y); ?></td>
    <td><?php echo (int)($x xor $y); ?></td>
